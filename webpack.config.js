@@ -44,6 +44,11 @@ module.exports = {
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
+      {
+        test: /\.(jpg|png|svg)$/,
+        exclude: /node_modules/,
+        type: "asset/resource",
+      },
     ]
   }
 }
